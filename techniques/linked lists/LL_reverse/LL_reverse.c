@@ -17,7 +17,7 @@ struct node* reverse_list(struct node *head) {
     while (curr) {
         
         // Store the next node
-        node* temp = curr->next;
+        struct node* temp = curr->next;
         
         // Reverses the current node to point to the previous node (first one = null)
         curr->next = prev;
